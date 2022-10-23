@@ -1,0 +1,142 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {# <link rel="stylesheet" href="style.css"> #} 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <div class="navbar-box">
+                <h3 class="heading-tertiary">To<i>SUM</i></h3>
+            </div>
+
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link-home">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#aboutSection" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#helpSection" class="navbar-link">Help</a>
+                </li>       
+            </ul>
+        </nav>
+
+
+    
+        <div class="box">
+            <form action="/result" method="POST" enctype="multipart/form-data">
+                <div class="">
+                    <textarea class="copyPaste" name="copyPasteTOS" placeholder="Paste ToS here..."></textarea>
+                    <input type="text" name="websiteLink">
+                </div>
+                <div class="containFile"><input type="file" name="fileToS"></div> 
+                <button class="buttonStyle">GENERATE SUMMARY</button>
+             </form>
+        </div>
+      
+    </section>
+
+
+    <div class="legend">
+        <br><b><center>LEGEND:</center></b><br>
+        <p class="wrap"><label class="green">BOX</label><label>&nbsp<b>PERMISSION</b> - Both parties <b><i>CAN</i></b> do.&nbsp&nbsp&nbsp&nbsp&nbsp</label><br></p><br><br>
+        <p class="wrap"><label class="blue">BOX</label><label>&nbsp<b>DUTY</b> - Both parties <b><i>MUST</i></b> do.&nbsp&nbsp&nbsp&nbsp&nbsp</label></p><br><br>
+        <p class="wrap"><label class="red">BOX</label><label>&nbsp<b>PROHIBITION</b> - Both parties must <b><i>NOT</i></b> do.&nbsp&nbsp&nbsp&nbsp&nbsp</label></p>
+            <br><br>
+    </div>
+
+
+    
+        <table class="category">              
+                    <tr><td class="category-container11"><h1>SUMMARIZED TOS</h1></td></tr>                        
+                    <tr><td class="category-container1">
+                        <br>
+                        <h3>Classification: Hybrid-Series (INPUT => Rule-Based => SVM => OUTPUT)</h3>
+                        <br>
+                        {% for i in sent_tokenized %}
+                            {% if array_classified_rule_based[loop.index0] == 1 %}
+                                <p style="color: green;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif array_classified_rule_based[loop.index0] == 2 %}
+                                <p style="color: red;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif array_classified_rule_based[loop.index0] == 3 %}
+                                <p style="color: blue;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% else %}
+                                <p style="color: gray;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% endif %}
+
+                        {% endfor %}
+
+                        <br>
+                        Lexical Simplification:
+                        {% for i in simplified_perm %}
+                            <p style="color: green;">{{i}}</p>
+                            <br>
+                        {% endfor %}
+                        {% for i in simplified_dut %}
+                            <p style="color: blue;">{{i}}</p>
+                            <br>
+                        {% endfor %}
+                        {% for i in simplified_proh %}
+                            <p style="color: red;">{{i}}</p>
+                            <br>
+                        {% endfor %}
+                    </td></tr>
+
+               
+        </table>
+
+
+
+
+
+
+    <br><br><br><br>
+    <div class="line"></div> <a name="aboutSection">
+    <div class="about">
+        <img class="logo"  src="https://i.postimg.cc/DyBCtgm8/Presentation1.jpg" alt="logo" />
+        <p><b>What is ToSUM?</b><br><br> ToSUM is a website for summarization of <i>Terms of Services (ToS).</i> <br> This was made to engage users in reading ToS.<br> </p>
+        <p>In 2018, a study stated that the reading speed of an average adult is about 250 to 280 words per minute</p>
+        <p>Moreover, they suggested that Terms of Service must take 15 to 17 minutes to read.</p>
+        <p>Therefore, this summarization website can help address this dilemma.</p>
+        <p> <br> <b>Why it is important to undertand ToS?</b> <br><br> It is a legal document that  contains rules and regulations the users must agree and abide <br> by when he or she uses a software.</p>
+        <p>And in case of breach of ToS, consequences must be applied.</p>
+        <p>Therefore, users must be aware of the ToS to avoid these consequences.</p>
+    </div>
+
+
+    
+
+    <br><br><br><br>
+    <div class="line"></div> <a name="helpSection">
+        <div class="about"> <br><br><br>
+            <p><b>We are happy to hear from you!</b> </p><br>
+            <p>For inquiries, you can contact us at: </p>
+            <p><a href="mailto:cyramariebalderosa16@gmail.com">cyramariebalderosa16@gmail.com</a></p>
+
+            <form action="https://formspree.io/f/xayvkwll" method="POST"> <br>
+                <p><b>We are glad to receive your feedback.</b></p><br> 
+                <p>Know that your opinion is essential to increase the performance of this website.</p>
+                <p>For feedback, kindly fill up the box below.</p>
+                <br><textarea type="text" class="feedback" placeholder="    Place your feedback here..." name="feedbackArea"></textarea><br>
+                <br><button class="submit" type="submit">SUBMIT FEEDBACK</button><br><br>
+                <p><b>Thank you and have a nice day!</b></p><br><br><br>
+            </form>
+        </div>
+
+</body>
+</html>

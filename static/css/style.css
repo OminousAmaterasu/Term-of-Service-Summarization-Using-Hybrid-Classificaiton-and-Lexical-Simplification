@@ -1,0 +1,322 @@
+
+   
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'popons', sans-serif;
+    background-color: rgb(143, 192, 177);
+    overflow-x: hidden;
+}
+
+.header{
+    height: 90vh;
+    position: relative;
+}
+
+/*For navigation*/
+/*For navigation*/
+.navbar{
+    height: 110px;
+    width: 100%;
+    background-color: rgba(49, 47, 47, 0.699);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 10;
+    position: fixed;
+}
+
+.navbar-box{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.navbar-list{
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navbar-item{
+    display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link{
+    text-decoration: none;
+    color: white;
+    padding: 3rem;
+    transition: all .2s ease;
+}
+
+.navbar-link:hover{
+    background-color: rgb(75, 177, 224);
+    color: white;
+}
+
+.navbar-link-home:visited,
+.navbar-link-home:link{
+    text-decoration: none;
+    color: white;
+    padding: 2rem 3.5rem;
+    border: 1px solid rgb(75, 177, 224);
+    border-radius: 200px;
+    box-shadow: 0 0 1rem rgba(8, 58, 92, 0.5);
+    text-shadow: 0 .3rem 1rem rgba(255,255,255, .5);
+    transition: all .4s ease;
+}
+
+.navbar-link-home:hover{
+    background-color: rgb(75, 177, 224);
+    color: white;
+}
+
+
+
+
+
+/*BOXES*/
+
+  
+
+.category{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border-collapse:separate;
+    border-spacing: 15px;
+    column-count: 4;
+    column-gap: 40px;
+}
+
+
+
+/*Summarized area*/
+.category-container11{
+    width: 25%;
+    height: 5rem; 
+    background-color: rgb(237, 243, 234);
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+    font-size: 15px;
+    
+  
+}
+.category-container1{
+    width: 25%;
+    height: 42rem; 
+    background-color: rgb(237, 243, 234);
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: 0 0 2rem rgba(0,0,0,.2);
+    transition: all .4s ease;
+    font-size: 15px;
+    padding: 2rem 2rem;
+   
+}
+
+
+.category-container1:hover, .category-container11:hover{
+    box-shadow: 0 0 5rem rgba(0,0,0,.4);
+    transform: scale(1.07);
+}
+
+
+h1{
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*For file input*/
+.containFile{
+    top: 20%;
+    left: 230px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: rgb(60, 129, 168);
+    border-radius: 50px;
+}
+
+/*For box na pinaglalagyan ng input*/
+.box{
+   
+  margin: auto;
+  width: 85%;
+  height: 70vh;
+  background-color: aliceblue;
+  border-radius: 50px;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  top: 18%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.legend{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    border: 2px solid black;
+    background-color: rgb(212, 180, 134);
+    font-size: 18px;
+}
+@media only screen and (min-width: 300px){
+    .wrap{
+        float: left;
+        position: relative;
+        left: 5%;
+    } 
+}
+@media only screen and (min-width: 700px){
+.wrap{
+    float: left;
+    position: relative;
+    left: 25%;
+}}
+@media only screen and (min-width: 900px){
+    .wrap{
+        float: left;
+        position: relative;
+        left: 35%;
+    }}
+
+
+.green{
+    background-color: green;
+    color: green;
+    
+}
+.blue{
+    background-color: rgb(22, 54, 90);
+    color:rgb(22, 54, 90);
+   
+}
+.red{
+    background-color: rgb(165, 50, 50);
+    color: rgb(165, 50, 50);
+   
+}
+
+
+/*For text area*/
+.copyPaste {
+    background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 90%;
+    height: 200px;
+    transition: all 0.2s;
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin:auto;
+  }
+  
+  .copyPaste:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+  }
+  
+  .copyPaste:focus {
+    cursor: text;
+    color: #333333;
+    background-color: white;
+    border-color: #333333;
+  }
+  
+
+
+/*For generate summary button*/
+  .buttonStyle{
+      border-radius: 50px;
+      background-color: rgb(60, 129, 168);
+      font-size: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+      height: 50px;
+      width:200px;
+      position: absolute;
+      left: 0%;
+      top: 70%;
+      right: 0%;
+      bottom: 0%;
+      margin:auto;
+  }
+
+
+  .line{
+    width: 80%;
+    height: 2px;
+    background-color: rgb(32, 32, 32);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.logo{
+      width: 500px;
+      height: 200px;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .about{
+      text-align: center;
+      font-size: 18px;
+      color: #333333;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+  }
+
+  .feedback{
+      width: 50%;
+      height:100px;
+      border-radius: 20px;
+      background-color: #dddddd;
+    color: #666666;
+    padding: 1em;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .submit{
+    border-radius: 50px;
+    background-color: rgb(60, 129, 168);
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    height: 30px;
+    width: 200px;
+    
+  }
