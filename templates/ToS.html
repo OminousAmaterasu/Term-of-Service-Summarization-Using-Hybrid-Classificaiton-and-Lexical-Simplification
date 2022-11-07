@@ -32,15 +32,17 @@
             </ul>
         </nav>
 
-
     
         <div class="box">
             <form action="/result" method="POST" enctype="multipart/form-data">
                 <div class="">
                     <textarea class="copyPaste" name="copyPasteTOS" placeholder="Paste ToS here..."></textarea>
-                    <input type="text" name="websiteLink">
+                    
+                    
+    
                 </div>
-                <div class="containFile"><input type="file" name="fileToS"></div> 
+                <div class="containFile"><input type="file" name="fileToS"></div>
+                <input type="text" class="websiteLinkStyle" name="websiteLink"> 
                 <button class="buttonStyle">GENERATE SUMMARY</button>
              </form>
         </div>
@@ -62,7 +64,7 @@
                     <tr><td class="category-container11"><h1>SUMMARIZED TOS</h1></td></tr>                        
                     <tr><td class="category-container1">
                         <br>
-                        <h3>Classification: Hybrid-Series (INPUT => Rule-Based => SVM => OUTPUT)</h3>
+                        <h3>Classification: Rule-Based Only</h3>
                         <br>
                         {% for i in sent_tokenized %}
                             {% if array_classified_rule_based[loop.index0] == 1 %}
@@ -72,6 +74,63 @@
                                 <p style="color: red;">{{loop.index0}} {{i}}</p>
                                 <br>
                             {% elif array_classified_rule_based[loop.index0] == 3 %}
+                                <p style="color: blue;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% else %}
+                                <p style="color: gray;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% endif %}
+
+                        {% endfor %}
+                        <br>
+                        <h3>Classification: SVM Only</h3>
+                        <br>
+                        {% for i in sent_tokenized %}
+                            {% if array_classified_SVM[loop.index0] == 1 %}
+                                <p style="color: green;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif array_classified_SVM[loop.index0] == 2 %}
+                                <p style="color: red;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif array_classified_SVM[loop.index0] == 3 %}
+                                <p style="color: blue;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% else %}
+                                <p style="color: gray;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% endif %}
+
+                        {% endfor %}
+                        <br>
+                        <h3>Classification: Hybrid-Parallel (INPUT => Rule-Based & SVM => OUTPUT)</h3>
+                        <br>
+                        {% for i in sent_tokenized %}
+                            {% if parallel_classification[loop.index0] == 1 %}
+                                <p style="color: green;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif parallel_classification[loop.index0] == 2 %}
+                                <p style="color: red;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif parallel_classification[loop.index0] == 3 %}
+                                <p style="color: blue;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% else %}
+                                <p style="color: gray;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% endif %}
+
+                        {% endfor %}
+                        <br>
+                        <h3>Classification: Hybrid-Series (INPUT => Rule-Based => SVM => OUTPUT)</h3>
+                        <br>
+                        {% for i in sent_tokenized %}
+                            {% if series_classification[loop.index0] == 1 %}
+                                <p style="color: green;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif series_classification[loop.index0] == 2 %}
+                                <p style="color: red;">{{loop.index0}} {{i}}</p>
+                                <br>
+                            {% elif series_classification[loop.index0] == 3 %}
                                 <p style="color: blue;">{{loop.index0}} {{i}}</p>
                                 <br>
                             {% else %}

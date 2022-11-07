@@ -1,0 +1,44 @@
+Rule-Based Only              precision    recall  f1-score   support
+
+           0       0.67      0.92      0.78      1181
+           1       0.72      0.25      0.37       359
+           2       0.62      0.59      0.61       190
+           3       0.82      0.46      0.59       476
+
+    accuracy                           0.69      2206
+   macro avg       0.71      0.56      0.59      2206
+weighted avg       0.70      0.69      0.66      2206
+
+SVM Only              precision    recall  f1-score   support
+
+           0       0.93      0.98      0.95      1181
+           1       0.94      0.87      0.90       359
+           2       0.97      0.79      0.87       190
+           3       0.93      0.92      0.92       476
+
+    accuracy                           0.93      2206
+   macro avg       0.94      0.89      0.91      2206
+weighted avg       0.93      0.93      0.93      2206
+
+Hybrid-Parallel              precision    recall  f1-score   support
+
+           0       0.94      0.91      0.93      1181
+           1       0.90      0.83      0.86       359
+           2       0.70      0.88      0.78       190
+           3       0.87      0.89      0.88       476
+
+    accuracy                           0.89      2206
+   macro avg       0.85      0.88      0.86      2206
+weighted avg       0.90      0.89      0.89      2206
+
+Hybrid-Series              precision    recall  f1-score   support
+
+           0       0.93      0.98      0.95      1181
+           1       0.94      0.87      0.90       359
+           2       0.97      0.79      0.87       190
+           3       0.93      0.92      0.92       476
+
+    accuracy                           0.93      2206
+   macro avg       0.94      0.89      0.91      2206
+weighted avg       0.93      0.93      0.93      2206
+

@@ -1,0 +1,32 @@
+This End User License Agreement and Terms of Service (“EULA”) is between 9GAG Limited (“9GAG”) and you, an individual user (“you”), and governs your use of 9GAG’s website at 9gag.com (“Website”), mobile software application that has been made available for download (“App”) and any related websites or other online properties owned or controlled by 9GAG (together with the App, the “Service”).
+BY INSTALLING ANY APP OR OTHERWISE ACCESSING OR USING ANY PORTION OF THE SERVICE, YOU AGREE THAT YOU HAVE READ, UNDERSTOOD AND AGREE TO BE BOUND BY THIS EULA.
+IF YOU DO NOT AGREE TO THE TERMS OF THIS EULA, THEN YOU MAY NOT USE ANY PORTION OF THE SERVICE.
+Material Terms: As provided in greater detail in this EULA (and without limiting the express language of this EULA), you acknowledge the following: the Service is licensed, not sold to you, and you may use the Service only as set forth in this EULA; the use of the Service may be subject to separate third party terms of service and fees, including, without limitation, your mobile network operator’s (“Carrier”) terms of service and fees, including fees charged for data usage and overage, which are your sole responsibility; you consent to the collection, use and disclosure of your personally identifiable information in accordance with 9GAG’s Privacy Policy located here (“Privacy Policy”); if you enter into or otherwise participate in a 9GAG Fun Off contest, you agree to be bound by the 9GAG Fun Off Contest Rules located here.
+You are responsible for clearing the rights to all User Content you Post to the Service; 9GAG provides the App to you on an “as is” basis without warranties of any kind and 9GAG’s liability to you is limited; disputes arising between you and 9GAG will be resolved by binding individual arbitration.
+By accepting this EULA, as provided in greater detail in Section 12 below, you and 9GAG are each waiving the right to a trial by jury or to participate in a class action; you agree to and acknowledge the “Notice Regarding Apple” below; and if you Post (defined in Section 5.1 below) any Objectionable Content (defined in Section 5.8 below) on the Service, then 9GAG may – but has no obligation to – take any remedial action that 9GAG, in its sole discretion, deems necessary and/or appropriate under the circumstances, such as, without limitation, suspending or terminating your Account (defined in Section 3.1 below), removing all of your User Content (defined in Section 5.1 below) from the Service and/or reporting you to law enforcement authorities, either directly or indirectly.
+GENERAL TERMS AND CONDITIONS
+Description.
+9GAG is an online platform and social media website that allows users to upload and share user-generated content.
+It is a leading platform for entertainment content with millions of daily visitors. As used in this EULA, “User” means any user of the Service.
+Eligibility.
+IN THE UNITED STATES, THE SERVICE IS NOT FOR PERSONS UNDER THE AGE OF 13. FOR USERS OUTSIDE OF THE UNITED STATES, THE SERVICE IS NOT FOR PERSONS UNDER THE AGE FOR WHICH RULES APPLY ON A AGE-BASED BASIS FOR THE COLLECTION OF DATA (“RESTRICTED AGE”). IN ALL CASES, THE SERVICE IS NOT FOR ANY USERS PREVIOUSLY SUSPENDED OR REMOVED FROM THE SERVICE BY 9GAG.
+IF YOU ARE UNDER 13 YEARS OF AGE IN THE UNITED STATES OR THE RESTRICTED AGE IN THE TERRITORY WHERE YOU RESIDE, THEN YOU MUST NOT USE OR ACCESS THE SERVICE AT ANY TIME OR IN ANY MANNER.
+Furthermore, by using the Service, you affirm that either you are at least 18 years of age or have been authorized to use the Service by your parent or legal guardian who is at least 18 years of age and entered into this EULA on your behalf.
+If you are using the Service on behalf of an entity or organization, then you represent and warrant that you have the authority to bind that entity or organization to this EULA and you agree to be bound by this EULA on behalf of that entity or organization.
+Changes.
+As the Service may undergo changes over time, we need the right to modify this EULA to match the changing functionalities of the Service.
+You therefore agree that 9GAG may change this EULA at any time without prior notice other than posting an updated EULA to the 9GAG website or within our App.
+9GAG will endeavor to provide you with prior notice when there are any material changes, and may require that you subsequently take an affirmative action acknowledging agreement to the revised EULA before continuing to access the Service.
+You may read a current, effective copy of this EULA at any time at https://about.9gag.com/tos/ .
+The revised EULA will become effective at the time of posting on the Service, and your use of the Service after such time will constitute your acceptance of the revised EULA.
+If any change to this EULA is not acceptable to you, then your sole remedy is to stop using the Service.
+Notwithstanding the preceding sentences of this Section 1.3, no revisions to this EULA will apply to any dispute between you and 9GAG that arose prior to the effective date of those revisions.
+Consideration.
+9GAG currently provides you with access to the Service for free.
+In return for enjoying this free access, you acknowledge and agree that 9GAG may generate revenues (including, by way of example and not limitation, through the sale of advertising and sponsorships, and the sublicensing of your User Content), increase goodwill or otherwise increase the value of 9GAG from your use of the Service, and you will have no right to share in any such revenues, goodwill or value whatsoever.
+9GAG in its sole discretion may eventually charge you fees to access certain features on the Service.
+9GAG will provide you with advance notice of any such changes before they take effect.
+Even if we charge you a fee for the use of the Service, you will have no right to share in the revenues we charge you or other Users or to share in any goodwill or value created.
+Privacy Policy.
+Your access to and use of the Service is also subject to 9GAG’s Privacy Policy located here, the terms and conditions of which are incorporated herein by reference.
+Jurisdiction.

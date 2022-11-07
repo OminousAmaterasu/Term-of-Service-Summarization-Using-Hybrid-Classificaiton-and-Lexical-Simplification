@@ -56,7 +56,13 @@ permission_pattern = [
     # 6. We may 
     [ {"LOWER": "We"},
       {"LOWER": "may"}
-    ]
+    ],
+    # 6. We may 
+    [ {"LOWER": "you"},
+      {"LOWER": "may"},
+      {"POS": "VERB"},
+      {"LOWER": "your"}
+    ],
 ]
 
 prohibition_pattern = [
@@ -91,6 +97,11 @@ prohibition_pattern = [
       {"LOWER": "to"}
     ],
     # You may never
+    [ {"LOWER": "You"},
+      {"LOWER": "may"},
+      {"LOWER": "never"}
+    ],
+    # Don't use the service
     [ {"LOWER": "You"},
       {"LOWER": "may"},
       {"LOWER": "never"}
@@ -168,7 +179,8 @@ duty_pattern = [
       {"LOWER": "may", "OP": "?"},
       {"LOWER": "need"},
       {"LOWER": "to", "OP": "?"}
-    ]
+    ],
+
 ]
 
 matcher.add("Permission", permission_pattern)
@@ -192,8 +204,10 @@ def readTxtFile(txtFile):
 
 # Preprocessing
 def removePuncAndTokenizeSent(origToS):
-    new_string = re.sub(r'[^\w\s.]', '', origToS)
-    sent_tokenized = nltk.sent_tokenize(new_string)
+    #new_string = re.sub(r'[^\w\s.]', '', origToS)
+    #new_string = re.sub(r'[^\w\s.]', '', origToS)
+    #sent_tokenized = nltk.sent_tokenize(new_string)
+    sent_tokenized = [p for p in origToS.split('\n') if p]
     return sent_tokenized
 
 # Input: Unclassified array of Sentences
